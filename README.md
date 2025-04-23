@@ -1,66 +1,74 @@
-## Foundry
+# Initiation à Ethereum
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Ce projet est une application web conçue pour initier les débutants à l'écosystème Ethereum. Il permet d'expérimenter avec des smart contracts de manière simple et intuitive.
 
-Foundry consists of:
+## Fonctionnalités
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+### 1. Compteur Simple
+- Un smart contract basique qui permet de comprendre les concepts fondamentaux
+- Fonctionnalités :
+  - Incrémentation du compteur
+  - Décrémentation du compteur (avec vérification de sécurité)
+  - Affichage en temps réel de la valeur du compteur
+  - Interaction directe avec la blockchain via MetaMask
 
-## Documentation
+### 2. Création de Token ERC20
+- Création de votre propre token ERC20 personnalisé
+- Fonctionnalités :
+  - Définition du nom du token
+  - Définition du symbole du token
+  - Déploiement automatique sur le réseau Sepolia
+  - Récupération de l'adresse du token créé
 
-https://book.getfoundry.sh/
+## Technologies Utilisées
 
-## Usage
+- **Frontend** :
+  - Next.js
+  - React
+  - TailwindCSS
+  - Wagmi (pour l'interaction avec Ethereum)
+  - Thirdweb (pour la connexion wallet)
 
-### Build
+- **Smart Contracts** :
+  - Solidity
+  - Foundry (pour le développement et les tests)
 
-```shell
-$ forge build
-```
+## Comment Commencer
 
-### Test
+1. **Prérequis** :
+   - Node.js installé
+   - MetaMask installé et configuré sur le réseau Sepolia
+   - Des ETH de test sur Sepolia (disponibles via les faucets)
 
-```shell
-$ forge test
-```
+2. **Installation** :
+   ```bash
+   npm install
+   npm run dev
+   ```
 
-### Format
+3. **Utilisation** :
+   - Connectez votre wallet MetaMask
+   - Explorez les différentes fonctionnalités
+   - Interagissez avec les smart contracts
 
-```shell
-$ forge fmt
-```
+## Réseau de Test
 
-### Gas Snapshots
+L'application utilise le réseau Sepolia, un réseau de test Ethereum. Cela permet d'expérimenter sans risquer de vrais ETH.
 
-```shell
-$ forge snapshot
-```
+## Objectifs Pédagogiques
 
-### Anvil
+- Comprendre les bases des smart contracts
+- Apprendre à interagir avec la blockchain
+- Découvrir le processus de création de tokens
+- Se familiariser avec les wallets et les transactions
 
-```shell
-$ anvil
-```
+## Contribution
 
-### Deploy
+Les contributions sont les bienvenues ! N'hésitez pas à :
+- Signaler des bugs
+- Proposer des améliorations
+- Ajouter de nouvelles fonctionnalités
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+## Licence
 
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+Ce projet est sous licence MIT.

@@ -1,3 +1,7 @@
+.env
+/node_modules
+/dist
+
 # Compiler files
 cache/
 out/
@@ -9,6 +13,3 @@ out/
 
 # Docs
 docs/
-
-# Dotenv file
-.env
